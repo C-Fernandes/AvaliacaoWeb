@@ -1,0 +1,35 @@
+-Por que você escolheu este design e não os demais que estavam disponíveis para escolha?
+
+Preferi este design porque ele se destacou visualmente entre as opções disponíveis. Achei a composição de cores, tipografia e disposição dos elementos muito atraentes e moderna. Esse layout não só chamou minha atenção como também me desafiou tecnicamente, pois apresentou características visuais que eu gostaria de explorar e aprender a reproduzir. Acredito que ele transmite uma experiência de navegação agradável e instigante.
+
+-Quais fontes de informação você usou para chegar na sua solução?
+
+Para resolver problemas específicos e melhorar a implementação do design, utilizei uma combinação de várias fontes de aprendizado. O ChatGPT foi especialmente útil para entender algumas questões de posicionamento e responsividade no CSS. Além disso, busquei tutoriais e artigos no Google sobre Flexbox e propriedades de CSS, como margin, padding e position, que foram essenciais para ajustar os detalhes visuais do layout. 
+
+-Quais as dificuldades que você teve para imitar o design original? Enumere com exemplos reais de código.
+
+Espaçamento dos elementos: Ajustar os espaçamentos foi uma das partes mais desafiadoras, especialmente nas margens e paddings de alguns elementos. Por exemplo, a estrutura abaixo foi repetidamente ajustada para alinhar corretamente os textos e outros elementos do layout:
+
+<div class="container-submenu">
+    <div class="submenu">
+        <h1>Starbucks® Rewards</h1>
+    </div>
+</div>
+
+Experimentei diferentes valores de margin e padding para cada elemento, ajustando conforme necessário para alcançar o layout visual ideal.
+
+Centralização e responsividade: Uma dificuldade adicional foi manter os itens centralizados em diferentes resoluções de tela. Para isso, criei contêineres adicionais e usei propriedades como display: flex; e justify-content: center;. Dessa forma, mesmo ao maximizar a página, os elementos permaneciam no centro:
+
+.container-submenu {
+    display: flex;
+    justify-content: center;
+}
+
+Posicionamento do ícone de estrela: O ícone de estrela foi um desafio à parte. Inicialmente, tive dificuldade para alinhá-lo ao texto e outros elementos. Precisei usar position: absolute; e ajustar manualmente a posição para que ele ficasse onde deveria. Ao final, usei algo como:
+
+.star-icon {
+    position: absolute;
+}
+
+Ajustei as coordenadas repetidamente até encontrar uma posição harmoniosa com o restante do layout. Esse processo exigiu vários testes e ajustes finos até que o resultado ficasse o mais próximo possível do design original.
+
